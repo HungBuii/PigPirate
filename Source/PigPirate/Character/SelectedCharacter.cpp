@@ -71,10 +71,12 @@ void ASelectedCharacter::Move(const FInputActionValue& Value)
 
 void ASelectedCharacter::JumpStarted(const FInputActionValue& Value)
 {
+	Jump();
 }
 
 void ASelectedCharacter::JumpEnded(const FInputActionValue& Value)
 {
+	StopJumping();
 }
 
 void ASelectedCharacter::Attack(const FInputActionValue& Value)
